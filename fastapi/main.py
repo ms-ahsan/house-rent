@@ -31,7 +31,7 @@ def extract_floor_data(floor_str):
         total_floor = np.nan
     return floor_num, total_floor
 
-# --- Model untuk input
+# --- Input Model
 class RentInput(BaseModel):
     bhk: int = Field(..., gt=0, description="Jumlah kamar harus lebih dari 0")
     size: int = Field(..., gt=0, description="Ukuran properti dalam sqft")
